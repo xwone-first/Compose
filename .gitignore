@@ -1,0 +1,65 @@
+# === 基础环境变量配置 ===
+.env
+.env.*
+*.secret
+*.key
+
+# === 日志文件 ===
+*.log
+*.pid
+*.tmp
+logs/
+**/logs/
+
+# === docker-compose 相关文件 ===
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.debug.yml
+
+# === 容器数据挂载目录（强烈建议忽略） ===
+**/data/
+**/volume/
+**/volumes/
+**/init/
+**/backup/
+
+# === 数据库存储（如 MySQL / Postgres 等）===
+**/mysql/
+**/postgres/
+**/redis/
+**/mongo/
+
+# === nginx、配置类挂载 ===
+**/nginx/logs/
+**/nginx/cache/
+
+# === 编译构建产物（可选） ===
+dist/
+build/
+out/
+
+# === IDE / 编辑器配置 ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === 操作系统杂项 ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === 容器缓存和本地调试残留 ===
+__pycache__/
+*.pyc
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# === 备份文件 ===
+*~
+*.bak
+*.swp
+*.swo
+*.old
